@@ -1,0 +1,44 @@
+:root {
+    --ink: #1b2a2f;
+    --paper: #f7f9f8;
+    --gojek: #00aa13;
+    --garis: #d7dfdc;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: var(--ink);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.atas {
+    background: var(--paper);
+    border-bottom: 1px solid var(--garis);
+    padding: 0.75rem 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.judul { font-size: 1.05rem; margin: 0; }
+
+.tarif {
+    background: var(--gojek);
+    color: #fff;
+    padding: 0.15rem 0.6rem;
+    border-radius: 99px;
+    font-weight: 600;
+}
+
+.info { font-size: 0.9rem; color: #4a5d63; }
+
+.peta { height: 100%; min-height: 320px; }
